@@ -4,8 +4,8 @@ from django.shortcuts import render
 
 
 # Create your views here.
-def stranka(request):
-    return HttpResponse("Hello")
+def index(request):
+    return render(request, "staticka/index.html")
 
 
 

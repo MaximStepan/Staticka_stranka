@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+#logo {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.text-primary {
+    color: blue;
+}
+
+#navbar {
+    background-color: #333333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+#navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+#navbar ul li a {
+    padding: 0.75rem;
+    margin: 0 0,25rem;
+}
+
+#navbar ul li a:hover {
+    background-color: blue;
+    border-radius: 5px;
+    color: black;
+}
+
+@media only screen and (max-width: 700px) {
+    #navbar ul {
+        margin-top: 1rem;
+    }
+}
+
+#showcase {
+    background: #333 url("../img/ronaldo.jpg") no-repeat center center/cover;
+    height: 120vh;
+    color: white;
+}
+
+#showcase .showcase-content{
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem;
+    display: flex;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.l-heading {
+    font-size: 4rem;
+    margin-top: 1rem;
+    line-height: 1.1;
+}
+
+.lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    background-color: blue;
+    padding: 1.25rem;
+    border: none;
+    border-radius: 100px;
+    text-decoration: none;
+}
+
+/* Utility Classes */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.text-center {
+    text-align: center;
+}
+.m-heading {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+/* Utility Classes */
+.py-1 {
+    padding: 1.5rem 0;
+}
+.py-2 {
+    padding: 2rem 0;
+}
+.py-3 {
+    padding: 3rem 0;
+}
+
+/* Section O Fotbalistovi */
+#what .items {
+    display: flex;
+    padding: 1rem;
+}
+
+#what .item {
+    text-align: center;
+    padding: 1rem;
+}
+
+#what .items .item i {
+    background: blue;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+#main-footer {
+    background: rgb(57, 57, 57);
+    padding: 5px;
+    color: white;
+}
+
+#trofeje {
+    background: #333 url("../img/trofeje.jpg") no-repeat center center/cover;
+    height: 120vh;
+    color: black;
+    margin: 2rem 5rem 5rem 5rem;
+}
+
+.trofeje {
+    max-width: 1100px;
+    margin: 3rem;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.t-he {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+.text-trofeje {
+    color: blue;
+}
+
+
+.tabulka table, th, td {
+    border: solid blue;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align:center
+}
+
+.nadpis_tabulka{
+    text-align: center;
+    color: blue;
+}
+
+#zdroj {
+    
+}
+
+@media only screen and (max-width: 600px) {
+    #navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    h1 {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+
+    .l-heading{
+        font-size: 2rem;
+        margin-bottom: 0.75rem;
+    }
+    #navbar ul li a {
+        padding: 0.15rem;
+        margin: 0 0.15rem;
+    }
+
+
+}
